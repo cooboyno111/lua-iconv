@@ -49,7 +49,7 @@ INSTALL_PATH = `$(LUABIN) -e'                           \
 
 #CFLAGS = -I/usr/local/include/ -fPIC -O3 -Wall $(OMIT_FRAME_PTR)
 #LFLAGS = -shared
-INSTALL_PATH = /usr/local/lib/lua/5.1/
+#INSTALL_PATH = /usr/local/lib/lua/5.1/
 
 
 all: iconv.so
