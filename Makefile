@@ -31,7 +31,7 @@
 OMIT_FRAME_PTR = -fomit-frame-pointer
 
 LUABIN = lua
-LUAPKG = lua5.2
+LUAPKG = lua5.1
 CFLAGS = `pkg-config $(LUAPKG) --cflags` -fPIC -O3 -Wall $(OMIT_FRAME_PTR)
 LFLAGS = -shared
 
@@ -49,7 +49,7 @@ INSTALL_PATH = `$(LUABIN) -e'                           \
 
 #CFLAGS = -I/usr/local/include/ -fPIC -O3 -Wall $(OMIT_FRAME_PTR)
 #LFLAGS = -shared
-#INSTALL_PATH = /usr/local/lib/lua/5.2/
+INSTALL_PATH = /usr/local/lib/lua/5.1/
 
 
 all: iconv.so
